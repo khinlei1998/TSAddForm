@@ -53,7 +53,7 @@ function App(): JSX.Element {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
          
-        <Input></Input>
+          <Input></Input>
         </View>
       </ScrollView>
     </SafeAreaView>

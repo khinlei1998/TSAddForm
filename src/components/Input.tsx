@@ -6,8 +6,8 @@ const Input: FC = () => {
     return (
         <View>
             <Icon
-                name="award"
-                size={25}
+                name="arrow-left"
+                size={20}
                 color="#000"
                 style={{ width: 20, height: 20 }}
             />
