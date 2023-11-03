@@ -20,7 +20,7 @@ function App(): JSX.Element {
       <Input icon="search" placeholder='search'
         onChangeText={(text) => console.log((text))
         }></Input>
-      <FlatList data={Fruits} renderItem={({item})=><Text>{item.name}</Text>} />
+      <FlatList data={Fruits} renderItem={({ item }) => <Text>{item.name}</Text>} />
     </SafeAreaView>
   );
 }
