@@ -9,7 +9,7 @@ interface Props {
 }
 const Input: FC<Props> = ({ icon, placeholder, onChangeText }) => {
     return (
-        <View style={{ padding: 15, flex: 1, justifyContent: 'center', alignItems: 'center', flexDirection: 'row' }}>
+        <View style={{ padding: 15,justifyContent: 'center', alignItems: 'center', flexDirection: 'row' }}>
             <View style={{ flex: 0.1, justifyContent: 'center', alignItems: 'flex-start' }} >
                 <Icon
                     name={icon}

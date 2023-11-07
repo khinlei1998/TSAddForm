@@ -33,8 +33,8 @@ function App(): JSX.Element {
   }
 
   return (
-    <SafeAreaView style={{ flex: 1, alignItems: 'center', }}>
-      {/* <Input icon="search" placeholder='search'
+    <SafeAreaView style={{ flex: 1, alignItems: 'center',justifyContent:'center' }}>
+      <Input icon="search" placeholder='search'
         onChangeText={(text) => handleSearch(text)
         }></Input>
       <FlatList data={fruits} renderItem={({ item }) => <ListItem id={item.id} name={item.name} price={item.price}></ListItem>} />
@@ -50,7 +50,7 @@ function App(): JSX.Element {
           <Text>Add</Text>
 
         </TouchableOpacity>
-      </View> */}
+      </View>
       <View style={{ display: inputshow == true ? 'flex' : 'none' }}>
         <Input icon="search" placeholder='Fuit Name'
           onChangeText={(text) => handleSearch(text)
