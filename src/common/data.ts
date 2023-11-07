@@ -1,7 +1,7 @@
-export interface Fruit{
-    id:number,
-    name:string,
-    price:number
+export interface Fruit {
+    id: number,
+    name: string,
+    price: number
 }
 export const Fruits = [
     {
