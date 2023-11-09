@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet ,Dimensions} from "react-native"
 import { Fruit } from "../common/data"
 import React, { FC } from 'react'
-const width=Dimensions.get('window').width
+const width=Dimensions.get('screen').width
 export const ListItem: FC<Fruit> = (props) => {
     return (
         <View style={styles.container}>

@@ -33,25 +33,31 @@ function App(): JSX.Element {
   }
 
   return (
-    <SafeAreaView style={{ flex: 1, alignItems: 'center',justifyContent:'center' }}>
-      <Input icon="search" placeholder='search'
-        onChangeText={(text) => handleSearch(text)
-        }></Input>
-      <FlatList data={fruits} renderItem={({ item }) => <ListItem id={item.id} name={item.name} price={item.price}></ListItem>} />
+    <SafeAreaView style={{ flex: 1, paddingVertical: 10, alignItems: 'center', }}>
+      <View style={{ flex:1,paddingVertical: 10, alignItems: 'center',  }}>
+        <Input icon="search" placeholder='search'
+          onChangeText={(text) => handleSearch(text)
+          }></Input>
+
+
+        <FlatList style={{ marginVertical: 10 }} data={fruits} renderItem={({ item }) =>
+          <ListItem id={item.id} name={item.name} price={item.price}></ListItem>} />
+      </View>
       <View>
+
         <TouchableOpacity style={{
           backgroundColor: 'red',
           marginVertical: 10,
           padding: 10,
           borderRadius: 6,
           paddingHorizontal: 20,
-          display:inputshow==false?"flex":"none"
+          display: inputshow == false ? "flex" : "none"
         }} onPress={() => setInputShow(true)}>
           <Text>Add</Text>
 
         </TouchableOpacity>
       </View>
-      <View style={{ display: inputshow == true ? 'flex' : 'none' }}>
+      {/* <View style={{ display: 'flex' }}>
         <Input icon="search" placeholder='Fuit Name'
           onChangeText={(text) => handleSearch(text)
           }></Input>
@@ -59,7 +65,7 @@ function App(): JSX.Element {
           onChangeText={(text) => handleSearch(text)
           }></Input>
 
-      </View>
+      </View> */}
     </SafeAreaView>
   );
 }
